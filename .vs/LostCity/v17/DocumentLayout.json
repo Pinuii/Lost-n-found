@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\",
+  "WorkspaceRootPath": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08AFB15F-ABAE-456B-90CF-EFEEFCCD4249}|LostCity\\LostCity.vcxproj|C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity\\LostCity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{08AFB15F-ABAE-456B-90CF-EFEEFCCD4249}|LostCity\\LostCity.vcxproj|C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{08AFB15F-ABAE-456B-90CF-EFEEFCCD4249}|LostCity\\LostCity.vcxproj|solutionrelative:LostCity\\LostCity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "LostCity.cpp",
-              "DocumentMoniker": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity\\LostCity.cpp",
+              "DocumentMoniker": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity.cpp",
               "RelativeDocumentMoniker": "LostCity\\LostCity.cpp",
-              "ToolTip": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity\\LostCity.cpp",
+              "ToolTip": "C:\\Users\\pette\\source\\repos\\Lost-n-found\\LostCity\\LostCity.cpp",
               "RelativeToolTip": "LostCity\\LostCity.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
