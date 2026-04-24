@@ -13,10 +13,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Buttons">
+      <UniqueIdentifier>{f0b83560-d84a-41b7-976b-f6dab977eec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Buttons\Calculus">
+      <UniqueIdentifier>{09a2c63b-08f0-465d-988e-33e13eb5f8b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buttons">
+      <UniqueIdentifier>{1f655f29-0469-4359-a14d-e82c7c56beb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buttons\Calculus">
+      <UniqueIdentifier>{6dd96c8d-339f-440c-b3f6-57e3d5fe4383}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LostCity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="MoinsDix.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="MoinsUn.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="MoinsX.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="MoinsXCarre.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusDix.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusUn.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusX.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusXCarre.cpp">
+      <Filter>Source Files\Buttons\Calculus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoinsDix.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="MoinsUn.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="MoinsX.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="MoinsXCarre.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusDix.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusUn.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusX.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlusXCarre.h">
+      <Filter>Header Files\Buttons\Calculus</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\Buttons</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,3 +1,26 @@
 ﻿  LostCity.cpp
-C:\Users\pette\source\repos\Lost-n-found\LostCity\LostCity.cpp(9,25): warning C4834: discarding return value of function with [[nodiscard]] attribute
-  LostCity.vcxproj -> C:\Users\pette\source\repos\Lost-n-found\x64\Debug\LostCity.exe
+  MoinsDix.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\Table.h(4,22): error C2504: 'Button' : classe de base non définie
+  (compiler le fichier source 'LostCity.cpp')
+  
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\LostCity.cpp(19,25): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\MoinsDix.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  MoinsUn.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\MoinsUn.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  MoinsX.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\MoinsX.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  MoinsXCarre.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\MoinsXCarre.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  PlusDix.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\PlusDix.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  PlusUn.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\PlusUn.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  PlusX.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\PlusX.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  PlusXCarre.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\PlusXCarre.cpp(8,31): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  Table.cpp
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\Table.h(4,22): error C2504: 'Button' : classe de base non définie
+  (compiler le fichier source 'Table.cpp')
+  
+  Génération de code en cours...

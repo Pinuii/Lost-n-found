@@ -131,7 +131,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="LostCity.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MoinsDix.cpp" />
+    <ClCompile Include="MoinsUn.cpp" />
+    <ClCompile Include="MoinsX.cpp" />
+    <ClCompile Include="MoinsXCarre.cpp" />
+    <ClCompile Include="PlusDix.cpp" />
+    <ClCompile Include="PlusUn.cpp" />
+    <ClCompile Include="PlusX.cpp" />
+    <ClCompile Include="PlusXCarre.cpp" />
+    <ClCompile Include="Table.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MoinsDix.h" />
+    <ClInclude Include="MoinsUn.h" />
+    <ClInclude Include="MoinsX.h" />
+    <ClInclude Include="MoinsXCarre.h" />
+    <ClInclude Include="PlusDix.h" />
+    <ClInclude Include="PlusUn.h" />
+    <ClInclude Include="PlusX.h" />
+    <ClInclude Include="PlusXCarre.h" />
+    <ClInclude Include="Table.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
