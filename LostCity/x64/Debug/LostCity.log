@@ -1,7 +1,2 @@
-﻿  GameManager.cpp
-  LostCity.cpp
-C:\Users\pette\source\repos\Lost-n-found\LostCity\LostCity.cpp(30,25): warning C4834: discarding return value of function with [[nodiscard]] attribute
-C:\Users\pette\source\repos\Lost-n-found\LostCity\LostCity.cpp(31,28): warning C4834: discarding return value of function with [[nodiscard]] attribute
-  TabletCurve.cpp
-  Generating Code...
+﻿  TabletCurve.cpp
   LostCity.vcxproj -> C:\Users\pette\source\repos\Lost-n-found\x64\Debug\LostCity.exe

@@ -12,6 +12,7 @@
 #include "MoinsXCarre.h"
 #include "graph.h"
 #include "GameManager.h"
+#include <SFML/Audio.hpp>
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
 
 	sf::VertexArray curve;
 	sf::Font font;
-	if (!font.openFromFile("font/Monocraft.ttc"))   
+	if (!font.openFromFile("font/Monocraft.ttc"))
 		return 1;
 	Graph graph;
 	GameManager gm(font);
@@ -29,6 +30,12 @@ int main()
 	sf::Texture tabletTexture;
 	background.loadFromFile("assets/background.png");
 	tabletTexture.loadFromFile("assets/tablet.png");
+
+	sf::Music music;
+	if (!music.openFromFile("assets/music/chopin.ogg"))
+
+		return -1; // error
+
 
 	sf::View view(sf::FloatRect({ 0.f, 450.f }, { 800.f, 600.f }));
 	float speed = 600.f;
@@ -69,6 +76,9 @@ int main()
 	tabletSprite.setScale({ 15.5f, 15.5f });
 	tabletSprite.setPosition({ 120.f, 480.f });
 
+			music.setVolume(100.f);
+			music.setLooping(true);
+			music.play();
 	while (window.isOpen())
 	{
 		float dt = clock.restart().asSeconds();
@@ -106,7 +116,7 @@ int main()
 
 		window.draw(backgroundSprite);
 		window.draw(tabletSprite);
-		gm.getTablet().draw(window);   
+		gm.getTablet().draw(window);
 		gm.getGraph().draw(window, font);  // plan de travail du joueur
 		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
 		score.setPosition({ 900.f, 460.f });
