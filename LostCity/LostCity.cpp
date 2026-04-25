@@ -10,16 +10,29 @@
 #include "PlusX.h"
 #include "PlusXCarre.h"
 #include "MoinsXCarre.h"
-
+#include "graph.h"
+#include "GameManager.h"
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode({ 1920, 1080 }), "SFML works!");
+
+	sf::VertexArray curve;
+	sf::Font font;
+	if (!font.openFromFile("font/Monocraft.ttc"))   // adapte le chemin
+		return 1;
+	Graph graph;
+	GameManager gm(font);
+	graph.buildCurve(font);
+
 	sf::Texture background;
+	sf::Texture tabletTexture;
 	background.loadFromFile("assets/background.png");
+	tabletTexture.loadFromFile("assets/tablet.png");
+
 	sf::View view(sf::FloatRect({ 0.f, 450.f }, { 800.f, 600.f }));
 	float speed = 600.f;
-	
+
 	sf::Vector2f center = static_cast<sf::Vector2f>(view.getCenter());
 	sf::Vector2f size = static_cast<sf::Vector2f>(view.getSize());
 	sf::Vector2f scale = { 1.9f, 1.9f };
@@ -48,6 +61,13 @@ int main()
 	PlusXCarre* rect8 = new PlusXCarre(1440.f, 900.f, 700.f, 450.f);
 
 	sf::Clock clock;
+	sf::Sprite backgroundSprite(background);
+	backgroundSprite.setScale(scale);
+	backgroundSprite.setPosition({ 0.f, 0.f });
+
+	sf::Sprite tabletSprite(tabletTexture);
+	tabletSprite.setScale({ 15.5f, 15.5f });
+	tabletSprite.setPosition({ 120.f, 480.f });
 
 	while (window.isOpen())
 	{
@@ -65,30 +85,32 @@ int main()
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
 			view.move({ speed * dt, 0.f });
 
+
 		sf::Vector2f targetCenter = view.getCenter();
 
 		targetCenter.x = std::max(viewSize.x * 0.5f,
-						 std::min(targetCenter.x, backgroundSize.x - viewSize.x * 0.6f));
+			std::min(targetCenter.x, backgroundSize.x - viewSize.x * 0.6f));
 
 		view.setCenter(targetCenter);
 		window.setView(view);
 
 		window.clear();
 
-		sf::Sprite backgroundSprite(background);
+		//sf::Sprite backgroundSprite(background);
+		//sf::Sprite tabletSprite(tabletTexture);
+
+		/*tabletSprite.setScale({ 15.5f, 15.5f });
+		tabletSprite.setPosition({ 120.f, 480.f });
 		backgroundSprite.setScale(scale);
-		backgroundSprite.setPosition({ 0.f, 0.f });
+		backgroundSprite.setPosition({ 0.f, 0.f });*/
 
 		window.draw(backgroundSprite);
-		rect1->drawButton(window);
-		rect2->drawButton(window);
-		rect3->drawButton(window);
-		rect4->drawButton(window);
-		rect5->drawButton(window);
-		rect6->drawButton(window);
-		rect7->drawButton(window);
-		rect8->drawButton(window);
-
+		window.draw(tabletSprite);
+		gm.getTablet().draw(window);   // courbe secrète sur la tablette
+		gm.getGraph().draw(window, font);  // plan de travail du joueur
+		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
+		score.setPosition({ 900.f, 460.f });
+		window.draw(score);
 		window.display();
 	}
 }
