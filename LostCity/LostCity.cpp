@@ -20,7 +20,7 @@ int main()
 
 	sf::VertexArray curve;
 	sf::Font font;
-	if (!font.openFromFile("font/Monocraft.ttc"))
+	if (!font.openFromFile("font/Roboto.ttf"))
 		return 1;
 	Graph graph;
 	GameManager gm(font);
