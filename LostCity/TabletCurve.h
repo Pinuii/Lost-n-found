@@ -19,10 +19,9 @@ private:
 	std::mt19937 rng_;
 	sf::VertexArray curve_;
 
-	// Position et taille de la zone intérieure de la tablette sprite
 	float INNER_X = 180.f;
-	static constexpr float INNER_Y = 530.f;   // PAD_TOP(480)  + bordure(50)
-	static constexpr float INNER_W = 396.f;   // 496 - 2*50
+	static constexpr float INNER_Y = 530.f;
+	static constexpr float INNER_W = 396.f; 
 	static constexpr float INNER_H = 396.f;
 
 	float generateFunction(float x) const;

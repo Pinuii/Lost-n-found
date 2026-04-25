@@ -19,7 +19,7 @@ int main()
 
 	sf::VertexArray curve;
 	sf::Font font;
-	if (!font.openFromFile("font/Monocraft.ttc"))   // adapte le chemin
+	if (!font.openFromFile("font/Monocraft.ttc"))   
 		return 1;
 	Graph graph;
 	GameManager gm(font);
@@ -106,7 +106,7 @@ int main()
 
 		window.draw(backgroundSprite);
 		window.draw(tabletSprite);
-		gm.getTablet().draw(window);   // courbe secrète sur la tablette
+		gm.getTablet().draw(window);   
 		gm.getGraph().draw(window, font);  // plan de travail du joueur
 		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
 		score.setPosition({ 900.f, 460.f });

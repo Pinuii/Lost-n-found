@@ -41,19 +41,17 @@ void TabletCurve::buildCurve()
     float rangeY = yMax - yMin;
     if (rangeY < 1.f) rangeY = 1.f;
 
-    // Marge 10% pour ne pas coller aux bords
+
     float marginX = (xMax - xMin) * 0.10f;
     float marginY = rangeY * 0.10f;
 
     float domainX = (xMax - xMin) + 2.f * marginX;
     float domainY = rangeY + 2.f * marginY;
 
-    // Échelle orthonormée avec marge
     float scaleX = INNER_W / domainX;
     float scaleY = INNER_H / domainY;
-    float scale = std::min(scaleX, scaleY);  // ? tout rentre garanti
+    float scale = std::min(scaleX, scaleY); 
 
-    // Origine recalculée avec la marge
     float usedW = (xMax - xMin + 2.f * marginX) * scale;
     float usedH = (rangeY + 2.f * marginY) * scale;
 
