@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Credits.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="graph.cpp" />
     <ClCompile Include="LostCity.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="MoinsUn.cpp" />
     <ClCompile Include="MoinsX.cpp" />
     <ClCompile Include="MoinsXCarre.cpp" />
+    <ClCompile Include="playBtn.cpp" />
     <ClCompile Include="PlusDix.cpp" />
     <ClCompile Include="PlusUn.cpp" />
     <ClCompile Include="PlusX.cpp" />
@@ -149,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="Credits.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="graph.h" />
     <ClInclude Include="Menu.h" />
@@ -156,6 +159,7 @@
     <ClInclude Include="MoinsUn.h" />
     <ClInclude Include="MoinsX.h" />
     <ClInclude Include="MoinsXCarre.h" />
+    <ClInclude Include="playBtn.h" />
     <ClInclude Include="PlusDix.h" />
     <ClInclude Include="PlusUn.h" />
     <ClInclude Include="PlusX.h" />
