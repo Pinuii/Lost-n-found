@@ -109,7 +109,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,15 +127,41 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-main.lib;sfml-graphics-lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics-lib;sfml-system.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="graph.cpp" />
     <ClCompile Include="LostCity.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MoinsDix.cpp" />
+    <ClCompile Include="MoinsUn.cpp" />
+    <ClCompile Include="MoinsX.cpp" />
+    <ClCompile Include="MoinsXCarre.cpp" />
+    <ClCompile Include="PlusDix.cpp" />
+    <ClCompile Include="PlusUn.cpp" />
+    <ClCompile Include="PlusX.cpp" />
+    <ClCompile Include="PlusXCarre.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="TabletCurve.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="graph.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MoinsDix.h" />
+    <ClInclude Include="MoinsUn.h" />
+    <ClInclude Include="MoinsX.h" />
+    <ClInclude Include="MoinsXCarre.h" />
+    <ClInclude Include="PlusDix.h" />
+    <ClInclude Include="PlusUn.h" />
+    <ClInclude Include="PlusX.h" />
+    <ClInclude Include="PlusXCarre.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="TabletCurve.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

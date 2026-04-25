@@ -1,5 +1,2 @@
-﻿  graph.cpp
-C:\Users\pette\source\repos\Lost-n-found\LostCity\graph.cpp(9,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\pette\source\repos\Lost-n-found\LostCity\graph.cpp(10,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\pette\source\repos\Lost-n-found\LostCity\graph.cpp(11,11): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  TabletCurve.cpp
   LostCity.vcxproj -> C:\Users\pette\source\repos\Lost-n-found\x64\Debug\LostCity.exe
