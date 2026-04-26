@@ -72,10 +72,10 @@
     <ClCompile Include="TabletCurve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="playBtn.cpp">
+    <ClCompile Include="Credits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Credits.cpp">
+    <ClCompile Include="PlayBtn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -122,10 +122,10 @@
     <ClInclude Include="TabletCurve.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="playBtn.h">
+    <ClInclude Include="Credits.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Credits.h">
+    <ClInclude Include="PlayBtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

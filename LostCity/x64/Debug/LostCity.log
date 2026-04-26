@@ -1,4 +1,4 @@
 ﻿  LostCity.cpp
-C:\Users\pette\source\repos\Lost-n-found\LostCity\LostCity.cpp(31,25): warning C4834: discarding return value of function with [[nodiscard]] attribute
-C:\Users\pette\source\repos\Lost-n-found\LostCity\LostCity.cpp(32,28): warning C4834: discarding return value of function with [[nodiscard]] attribute
-  LostCity.vcxproj -> C:\Users\pette\source\repos\Lost-n-found\x64\Debug\LostCity.exe
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\LostCity.cpp(36,25): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\LostCity\LostCity.cpp(37,28): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+  LostCity.vcxproj -> C:\Users\nolha\Documents\Gaming Campus\Bachelore 1\Programmation\Lost-n-found\x64\Debug\LostCity.exe

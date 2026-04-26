@@ -51,7 +51,7 @@ void Menu::draw(sf::RenderWindow& window)
 
 bool Menu::isGameStarted() const
 {
-	return gameStarted_;
+    return gameStarted_;
 }
 
 void Menu::spawnStars(int count, float radius, float alpha)

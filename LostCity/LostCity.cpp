@@ -1,9 +1,10 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <algorithm>
 #include <optional>
+
 #include "Menu.h"
 #include "Credits.h"
-
 #include "Table.h"
 #include "MoinsUn.h"
 #include "MoinsDix.h"
@@ -13,10 +14,9 @@
 #include "PlusX.h"
 #include "PlusXCarre.h"
 #include "MoinsXCarre.h"
-#include "playBtn.h"
+#include "PlayBtn.h"
 #include "graph.h"
 #include "GameManager.h"
-#include <SFML/Audio.hpp>
 
 int main()
 {
@@ -25,7 +25,6 @@ int main()
 	sf::VertexArray curve;
 	sf::Font font;
 	if (!font.openFromFile("font/Roboto.ttf"))
-
 		return 1;
 
 	Graph graph;
@@ -39,8 +38,7 @@ int main()
 
 	sf::Music music;
 	if (!music.openFromFile("assets/music/chopin.ogg"))
-
-		return -1; // error
+		return -1;
 
 	Menu menu(font);
 
@@ -63,15 +61,16 @@ int main()
 	plusXParams plusXParams(&window);
 	moinsXCarreParams moinsXCarreParams(&window);
 	plusXCarreParams plusXCarreParams(&window);
+	playBtnParams playParams(&window);
 
-	MoinsDix* rect1 = new MoinsDix(50, 50, 0.f, 800);
-	PlusDix* rect2 = new PlusDix(50, 50, 100.f, 810);
-	MoinsUn* rect3 = new MoinsUn(50, 50, 200, 800);
-	PlusUn* rect4 = new PlusUn(50, 50, 300, 810);
-	MoinsX* rect5 = new MoinsX(50, 50, 400, 800);
-	PlusX* rect6 = new PlusX(50, 50, 500, 810);
-	MoinsXCarre* rect7 = new MoinsXCarre(50, 50, 600, 800);
-	PlusXCarre* rect8 = new PlusXCarre(50, 50, 700.f, 810);
+	MoinsDix* rect1 = new MoinsDix(30, 50, 1250, 550.f);
+	PlusDix* rect2 = new PlusDix(30, 50, 1350, 560.f);
+	MoinsUn* rect3 = new MoinsUn(30, 50, 1250, 600.f);
+	PlusUn* rect4 = new PlusUn(30, 50, 1350, 610.f);
+	MoinsX* rect5 = new MoinsX(30, 50, 1250, 650.f);
+	PlusX* rect6 = new PlusX(30, 50, 1350, 660.f);
+	MoinsXCarre* rect7 = new MoinsXCarre(30, 50, 1250, 710.f);
+	PlusXCarre* rect8 = new PlusXCarre(30, 50, 1350, 720.f);
 	PlayBtn* playButton = new PlayBtn(50, 50, 800.f, 800.f);
 
 	rect1->setSize(60, 50);
@@ -93,14 +92,12 @@ int main()
 	tabletSprite.setScale({ 15.5f, 15.5f });
 	tabletSprite.setPosition({ 120.f, 480.f });
 
-			music.setVolume(100.f);
-			music.setLooping(true);
-			music.play();
+	music.setVolume(100.f);
+	music.setLooping(true);
+	music.play();
 
 	bool gameRunning = false;
-	playBtnParams playParams(&window);
 	bool showCredits = false;
-
 	Credits credits(font);
 
 	while (window.isOpen())
@@ -154,11 +151,6 @@ int main()
 
 		window.draw(backgroundSprite);
 		window.draw(tabletSprite);
-		gm.getTablet().draw(window);
-		gm.getGraph().draw(window, font);  // plan de travail du joueur
-		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
-		score.setPosition({ 900.f, 460.f });
-		window.draw(score);
 		rect1->drawButton(window);
 		rect2->drawButton(window);
 		rect3->drawButton(window);
@@ -170,11 +162,16 @@ int main()
 		gm.getTablet().draw(window);
 		gm.getGraph().draw(window, font);
 
+		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
+		score.setPosition({ 900.f, 460.f });
+		window.draw(score);
+
 		window.display();
 	}
 
 	delete rect1; delete rect2; delete rect3; delete rect4;
 	delete rect5; delete rect6; delete rect7; delete rect8;
 	delete playButton;
+
 	return 0;
 }
