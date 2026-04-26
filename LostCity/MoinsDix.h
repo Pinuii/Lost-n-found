@@ -4,11 +4,11 @@
 
 class moinsDixParams : public Params {
 public:
-    moinsDixParams() = default;
-    moinsDixParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
     sf::RenderWindow* InternWindow;
+    GameManager* gm;
+    moinsDixParams(sf::RenderWindow* w, GameManager* g)
+        : InternWindow(w), gm(g) {
+    }
 };
 
 class MoinsDix : public Button {

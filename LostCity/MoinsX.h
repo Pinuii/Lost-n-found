@@ -4,13 +4,13 @@
 
 class moinsXParams : public Params {
 public:
-    moinsXParams() = default;
-    moinsXParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	moinsXParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	moinsXParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
-
 class MoinsX : public Button {
 private:
     sf::Texture _tableTexture;

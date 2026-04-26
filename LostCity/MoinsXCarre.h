@@ -4,11 +4,12 @@
 
 class moinsXCarreParams : public Params {
 public:
-    moinsXCarreParams() = default;
-    moinsXCarreParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	moinsXCarreParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	moinsXCarreParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
 
 class MoinsXCarre : public Button {

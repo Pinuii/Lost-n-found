@@ -17,9 +17,10 @@ void PlusUn::setTextureTable(float x, float y)
 
 void PlusUn::onClick(Params* _params)
 {
-    plusUnParams* castedParams = static_cast<plusUnParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    plusUnParams* p = static_cast<plusUnParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementC(1);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

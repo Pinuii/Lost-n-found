@@ -4,11 +4,12 @@
 
 class plusXParams : public Params {
 public:
-    plusXParams() = default;
-    plusXParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	plusXParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	plusXParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
 
 class PlusX : public Button {

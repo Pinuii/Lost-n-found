@@ -17,9 +17,10 @@ void MoinsX::setTextureTable(float x, float y)
 
 void MoinsX::onClick(Params* _params)
 {
-    moinsXParams* castedParams = static_cast<moinsXParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    moinsXParams* p = static_cast<moinsXParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementB(-1);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

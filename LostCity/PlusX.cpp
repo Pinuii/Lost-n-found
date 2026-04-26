@@ -17,9 +17,10 @@ void PlusX::setTextureTable(float x, float y)
 
 void PlusX::onClick(Params* _params)
 {
-    plusXParams* castedParams = static_cast<plusXParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    plusXParams* p = static_cast<plusXParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementB(1);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

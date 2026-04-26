@@ -4,11 +4,12 @@
 
 class plusUnParams : public Params {
 public:
-    plusUnParams() = default;
-    plusUnParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	plusUnParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	plusUnParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
 
 class PlusUn : public Button {

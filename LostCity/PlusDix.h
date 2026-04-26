@@ -4,11 +4,12 @@
 
 class plusDixParams : public Params {
 public:
-    plusDixParams() = default;
-    plusDixParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	plusDixParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	plusDixParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
 
 class PlusDix : public Button {

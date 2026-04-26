@@ -40,3 +40,7 @@ bool Button::detectOnClick(const sf::Event::MouseButtonPressed* currentInputMous
 }
 
 void Button::onClick(Params* _params) {}
+
+bool Button::isHovered(sf::Vector2f pos) const {
+    return _button.getGlobalBounds().contains(pos);
+}

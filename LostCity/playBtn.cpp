@@ -1,4 +1,4 @@
-#include "playBtn.h"
+#include "PlayBtn.h"
 
 PlayBtn::PlayBtn(float width, float height, float x, float y)
     : Button(width, height, x, y)

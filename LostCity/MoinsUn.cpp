@@ -17,9 +17,10 @@ void MoinsUn::setTextureTable(float x, float y)
 
 void MoinsUn::onClick(Params* _params)
 {
-    moinsUnParams* castedParams = static_cast<moinsUnParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    moinsUnParams* p = static_cast<moinsUnParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementC(-1);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

@@ -17,9 +17,10 @@ void PlusDix::setTextureTable(float x, float y)
 
 void PlusDix::onClick(Params* _params)
 {
-    plusDixParams* castedParams = static_cast<plusDixParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    plusDixParams* p = static_cast<plusDixParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementC(10);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

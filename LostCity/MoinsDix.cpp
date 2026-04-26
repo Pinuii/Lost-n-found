@@ -17,9 +17,10 @@ void MoinsDix::setTextureTable(float x, float y)
 
 void MoinsDix::onClick(Params* _params)
 {
-    moinsDixParams* castedParams = static_cast<moinsDixParams*>(_params);
-    if (castedParams && castedParams->InternWindow) {
-        castedParams->InternWindow->close();
+    moinsDixParams* p = static_cast<moinsDixParams*>(_params);
+    if (p && p->gm)
+    {
+        p->gm->getGraph().incrementC(-10);
+        p->gm->onButtonPressed();
     }
-    std::cout << "Quit\n";
 }

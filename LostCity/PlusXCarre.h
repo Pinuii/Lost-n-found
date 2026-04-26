@@ -4,11 +4,12 @@
 
 class plusXCarreParams : public Params {
 public:
-    plusXCarreParams() = default;
-    plusXCarreParams(sf::RenderWindow* Window) {
-        InternWindow = Window;
-    }
-    sf::RenderWindow* InternWindow;
+	plusXCarreParams() = default;
+	GameManager* gm;
+	sf::RenderWindow* InternWindow;
+	plusXCarreParams(sf::RenderWindow* w, GameManager* g)
+		: InternWindow(w), gm(g) {
+	}
 };
 
 class PlusXCarre : public Button {

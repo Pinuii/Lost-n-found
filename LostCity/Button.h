@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "GameManager.h"
 #pragma once
 
 class Params {};
@@ -22,4 +23,5 @@ public:
     bool detectOnClick(const sf::Event::MouseButtonPressed* currentInputMouse, sf::RenderWindow& window);
 
     virtual void onClick(Params* _params);
+    bool isHovered(sf::Vector2f pos) const;
 };

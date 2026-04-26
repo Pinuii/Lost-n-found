@@ -53,15 +53,15 @@ int main()
 	sf::Vector2f viewSize = view.getSize();
 	sf::Vector2f textureSize = static_cast<sf::Vector2f>(background.getSize());
 
-	moinsDixParams moinsDixParams(&window);
-	plusDixParams plusDixParams(&window);
-	moinsUnParams moinsUnParams(&window);
-	plusUnParams plusUnParams(&window);
-	moinsXParams moinsXParams(&window);
-	plusXParams plusXParams(&window);
-	moinsXCarreParams moinsXCarreParams(&window);
-	plusXCarreParams plusXCarreParams(&window);
-	playBtnParams playParams(&window);
+	moinsDixParams moinsDixParams(&window, &gm);
+	plusDixParams plusDixParams(&window, &gm);
+	moinsUnParams moinsUnParams(&window, &gm);
+	plusUnParams plusUnParams(&window, &gm);
+	moinsXParams moinsXParams(&window, &gm);
+	plusXParams plusXParams(&window, &gm);
+	moinsXCarreParams moinsXCarreParams(&window, &gm);
+	plusXCarreParams plusXCarreParams(&window, &gm);
+	playBtnParams playParams(&window, &gm);
 
 	MoinsDix* rect1 = new MoinsDix(30, 50, 1250, 550.f);
 	PlusDix* rect2 = new PlusDix(30, 50, 1350, 560.f);
@@ -117,7 +117,20 @@ int main()
 				}
 			}
 			else {
-				const sf::Event::MouseButtonPressed* currentInputMouse = event->getIf<sf::Event::MouseButtonPressed>();
+				const sf::Event::MouseButtonPressed* click = event->getIf<sf::Event::MouseButtonPressed>();
+				if (click) {
+					sf::Vector2f mousePos = window.mapPixelToCoords(
+						{ (int)click->position.x, (int)click->position.y });
+
+					if (rect1->isHovered(mousePos)) rect1->onClick(&moinsDixParams);
+					if (rect2->isHovered(mousePos)) rect2->onClick(&plusDixParams);
+					if (rect3->isHovered(mousePos)) rect3->onClick(&moinsUnParams);
+					if (rect4->isHovered(mousePos)) rect4->onClick(&plusUnParams);
+					if (rect5->isHovered(mousePos)) rect5->onClick(&moinsXParams);
+					if (rect6->isHovered(mousePos)) rect6->onClick(&plusXParams);
+					if (rect7->isHovered(mousePos)) rect7->onClick(&moinsXCarreParams);
+					if (rect8->isHovered(mousePos)) rect8->onClick(&plusXCarreParams);
+				}
 			}
 		}
 
@@ -159,7 +172,7 @@ int main()
 		rect6->drawButton(window);
 		rect7->drawButton(window);
 		rect8->drawButton(window);
-		gm.getTablet().draw(window);
+		gm.getTablet().draw(window, view);  // à la place de gm.getTablet().draw(window)
 		gm.getGraph().draw(window, font);
 
 		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);
