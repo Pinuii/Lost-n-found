@@ -2,7 +2,7 @@
 
 Credits::Credits(sf::Font& font)
     : m_font(font), m_visible(false), m_endLine(font, "", 30), m_title(font, "- Credits -", 42), m_dev(font, "Developpeur : Nolhan et Pette", 32),
-    m_artist(font, "Artiste : Nolhan et l'internet", 32), m_hint(font, "Musique : Music by Scott Buckley (www.scottbuckley.com.au) Licensed under CC BY 4.0", 24)
+    m_artist(font, "Artiste : Nolhan et l'internet", 32), m_hint(font, "", 24)
 {
     m_title.setFillColor(sf::Color(240, 220, 255));
     centerText(m_title, 350.f);

@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -155,17 +155,12 @@
               "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cpp",
-              "DocumentMoniker": "C:\\Users\\nolha\\Documents\\Gaming Campus\\Bachelore 1\\Programmation\\Lost-n-found\\LostCity\\GameManager.cpp",
-              "RelativeDocumentMoniker": "LostCity\\GameManager.cpp",
-              "ToolTip": "C:\\Users\\nolha\\Documents\\Gaming Campus\\Bachelore 1\\Programmation\\Lost-n-found\\LostCity\\GameManager.cpp",
-              "RelativeToolTip": "LostCity\\GameManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-26T18:53:38.382Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -179,14 +174,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-26T18:53:30.774Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -208,9 +195,22 @@
               "RelativeDocumentMoniker": "LostCity\\LostCity.cpp",
               "ToolTip": "C:\\Users\\nolha\\Documents\\Gaming Campus\\Bachelore 1\\Programmation\\Lost-n-found\\LostCity\\LostCity.cpp*",
               "RelativeToolTip": "LostCity\\LostCity.cpp*",
-              "ViewState": "AgIAAFkAAAAAAAAAAADwv2kAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwKkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-23T08:19:55.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cpp",
+              "DocumentMoniker": "C:\\Users\\nolha\\Documents\\Gaming Campus\\Bachelore 1\\Programmation\\Lost-n-found\\LostCity\\GameManager.cpp",
+              "RelativeDocumentMoniker": "LostCity\\GameManager.cpp",
+              "ToolTip": "C:\\Users\\nolha\\Documents\\Gaming Campus\\Bachelore 1\\Programmation\\Lost-n-found\\LostCity\\GameManager.cpp",
+              "RelativeToolTip": "LostCity\\GameManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-26T18:53:38.382Z",
               "EditorCaption": ""
             },
             {
