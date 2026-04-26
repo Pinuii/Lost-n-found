@@ -172,7 +172,7 @@ int main()
 		rect6->drawButton(window);
 		rect7->drawButton(window);
 		rect8->drawButton(window);
-		gm.getTablet().draw(window, view);  // à la place de gm.getTablet().draw(window)
+		gm.getTablet().draw(window, view);
 		gm.getGraph().draw(window, font);
 
 		sf::Text score(font, "Found : " + std::to_string(gm.getScore()) + " / 5", 20);

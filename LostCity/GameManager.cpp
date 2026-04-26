@@ -10,7 +10,7 @@ void GameManager::nextRound()
 {
     tablet_.randomize();          
     tablet_.buildCurve();
-    graph_.resetPlayer();         // remet le joueur à f(x) = 0
+    graph_.resetPlayer();         
     graph_.buildCurve(*font_);
 }
 

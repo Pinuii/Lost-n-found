@@ -67,7 +67,7 @@ void TabletCurve::draw(sf::RenderWindow& window, const sf::View& gameView) const
 {
     sf::View previousView = window.getView();
     std::cout << "a: " << a_ << ", b: " << b_ << ", c: " << c_ << std::endl;
-    // View clippée aux coordonnées monde de la tablette
+
     sf::View clipView(sf::FloatRect(
         { INNER_X, INNER_Y },
         { INNER_W, INNER_H }
@@ -85,7 +85,6 @@ void TabletCurve::draw(sf::RenderWindow& window, const sf::View& gameView) const
 
     window.setView(clipView);
 
-    // Axes
     sf::VertexArray axes(sf::PrimitiveType::Lines, 4);
     axes[0].position = { originX_ + xMin_ * scale_, originY_ };
     axes[0].color = sf::Color(80, 60, 30);
@@ -97,7 +96,6 @@ void TabletCurve::draw(sf::RenderWindow& window, const sf::View& gameView) const
     axes[3].color = sf::Color(80, 60, 30);
     window.draw(axes);
 
-    // Graduations
     sf::VertexArray ticks(sf::PrimitiveType::Lines);
     const float tickSize = 4.f;
 
