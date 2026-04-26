@@ -14,7 +14,7 @@
 #include "PlusX.h"
 #include "PlusXCarre.h"
 #include "MoinsXCarre.h"
-#include "playBtn.h"
+#include "PlayBtn.h"
 #include "graph.h"
 #include "GameManager.h"
 
