@@ -104,6 +104,28 @@ int main()
 	{
 		float dt = clock.restart().asSeconds();
 
+		if (showCredits)
+		{
+			while (const std::optional event = window.pollEvent())
+			{
+				if (event->is<sf::Event::Closed>())
+					window.close();
+
+				const sf::Event::KeyPressed* keyEvent = event->getIf<sf::Event::KeyPressed>();
+				if (keyEvent)
+				{
+					if (credits.handleKey(keyEvent->code))
+						showCredits = false;
+				}
+			}
+
+			sf::View defaultView = window.getDefaultView();
+			window.setView(defaultView);
+			credits.draw(window);
+			window.display();
+			continue;
+		}
+
 		while (const std::optional event = window.pollEvent())
 		{
 			if (event->is<sf::Event::Closed>())
@@ -145,6 +167,8 @@ int main()
 
 		if (gm.getScore() >= 5 && !showCredits) {
 			showCredits = true;
+			credits.show("Well Played you founded all 5 functions and the ancient city!");
+			continue;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q))
