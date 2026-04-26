@@ -5,7 +5,7 @@ PlusX::PlusX(float width, float height, float x, float y)
 {
     _button = sf::RectangleShape({ 2000.f, 1000.f });
     _tableTexture = sf::Texture();
-    _tableTexture.loadFromFile("assets/buttons_calculus.png");
+    _tableTexture.loadFromFile("assets/plusX.png");
     _button.setTexture(&_tableTexture);
     setPosition(x, y);
 }
