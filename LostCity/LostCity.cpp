@@ -63,14 +63,14 @@ int main()
 	plusXCarreParams plusXCarreParams(&window);
 	playBtnParams playParams(&window);
 
-	MoinsDix* rect1 = new MoinsDix(1440.f, 900.f, 700.f, 450.f);
-	PlusDix* rect2 = new PlusDix(1440.f, 900.f, 700.f, 450.f);
-	MoinsUn* rect3 = new MoinsUn(1440.f, 900.f, 700.f, 450.f);
-	PlusUn* rect4 = new PlusUn(1440.f, 900.f, 700.f, 450.f);
-	MoinsX* rect5 = new MoinsX(1440.f, 900.f, 700.f, 450.f);
-	PlusX* rect6 = new PlusX(1440.f, 900.f, 700.f, 450.f);
-	MoinsXCarre* rect7 = new MoinsXCarre(1440.f, 900.f, 700.f, 450.f);
-	PlusXCarre* rect8 = new PlusXCarre(1440.f, 900.f, 700.f, 450.f);
+	MoinsDix* rect1 = new MoinsDix(30, 50, 1250, 550.f);
+	PlusDix* rect2 = new PlusDix(30, 50, 1350, 560.f);
+	MoinsUn* rect3 = new MoinsUn(30, 50, 1250, 600.f);
+	PlusUn* rect4 = new PlusUn(30, 50, 1350, 610.f);
+	MoinsX* rect5 = new MoinsX(30, 50, 1250, 650.f);
+	PlusX* rect6 = new PlusX(30, 50, 1350, 660.f);
+	MoinsXCarre* rect7 = new MoinsXCarre(30, 50, 1250, 710.f);
+	PlusXCarre* rect8 = new PlusXCarre(30, 50, 1350, 720.f);
 	PlayBtn* playButton = new PlayBtn(50, 50, 800.f, 800.f);
 
 	rect1->setSize(60, 50);
